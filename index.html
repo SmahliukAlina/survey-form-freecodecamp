@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><em>Survey form as a task for FreeCodeCamp</em></p>
+      </header>
+
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label"
+            >Name
+            <input
+              type="text"
+              name="input"
+              id="name"
+              placeholder="Enter your name"
+              required
+          /></label>
+          <label id="email-label"
+            >Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+          /></label>
+          <label id="number-label"
+            >Age(optional)
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="13"
+              max="120"
+              placeholder="Age"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <label
+            >Which option best describes your current role?
+            <select id="dropdown">
+              <option name="">Select current role</option>
+              <option name="role-student">Student</option>
+              <option name="role-fulltime">Full time job</option>
+              <option name="role-other">Other</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label class="recommendation"
+            ><input type="radio" value="definitely" name="recommendation" />
+            Definitely</label
+          >
+          <label class="recommendation"
+            ><input type="radio" value="maybe" name="recommendation" />
+            Maybe</label
+          >
+          <label class="recommendation"
+            ><input type="radio" value="not-sure" name="recommendation" /> Not
+            sure</label
+          >
+        </fieldset>
+        <fieldset>
+          <p>
+            What would you like to see improved?
+            <small>(Check all that apply)</small>
+          </p>
+          <label class="improvement"
+            ><input type="checkbox" value="front-end" />Front-end
+            Projects</label
+          >
+          <label class="improvement"
+            ><input type="checkbox" value="back-end" />Back-end Projects</label
+          >
+          <label class="improvement"
+            ><input type="checkbox" value="data-visual" />Data
+            Visualization</label
+          >
+          <label class="improvement"
+            ><input type="checkbox" value="challenges" />Challenges</label
+          >
+        </fieldset>
+        <fieldset>
+          <label>
+            Any comments or suggestions?
+            <textarea
+              name="comments"
+              placeholder="Enter your comment here..."
+              rows="7"
+              cols="30"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" value="SUBMIT" />
+      </form>
+    </div>
+  </body>
+</html>
